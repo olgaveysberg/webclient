@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="starter-template">
+        <button (click)="getBookmark()" class="btn btn-outline-info glyphicon glyphicon-search button-image" name="bookmark" ></button>
+    </div>
+   <div class="row row-m-t" *ngFor="let bookmark of bookmarks$">
+       <div class="col-md-4 form-group">
+           <div class="imgAbt">
+               <img width="120" height="120" src="{{bookmark.avatar}}" />
+           </div>
+       </div>
+       <div class="col-md-6 form-group">
+           <p>{{bookmark.name}}</p>
+       </div>
+   </div>
+</div>
